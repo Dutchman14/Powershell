@@ -58,6 +58,7 @@ if ($currentdns.ServerAddresses -eq $piip)
 
     #SWITCH TO CLOUDFLARE DNS
     Set-DnsClientServerAddress -InterfaceIndex $ethernet.InterfaceIndex -ServerAddresses $cloudflare
+    Clear-DnsClientCache
     ECHO "NOW ON CLOUDFLARE DNS"
     $bal1msg.ShowBalloonTip(20000)
 
@@ -69,6 +70,7 @@ else
 
     #SET PI-HOLE AS DNS
     Set-DnsClientServerAddress -InterfaceIndex $ethernet.InterfaceIndex -ServerAddresses $foo
+    Clear-DnsClientCache
     ECHO "BACK TO PI-HOLE"
     $balmsg.ShowBalloonTip(20000)
 }
