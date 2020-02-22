@@ -8,7 +8,7 @@ Either through the DHCP on the router or manually set in network adapter propert
 The script will detect the active network adapter and toggle the DNS between Cloudflare and PI-HOLE.
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ##########################SETUP####################################################################
-Put the folder in the root as such:
+Put the files in the root as such:
 C:\Toggle
 
 
