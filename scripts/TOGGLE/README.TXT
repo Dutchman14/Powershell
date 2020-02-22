@@ -22,8 +22,8 @@ To run the script, run Toggle.vbs
 
 This will force the windows to remain hidden, and also to use admin rights.
 
-
-Running Set-Default ps script will set windows 10 to default DNS settings.
+If you have trouble, try running Set-Default before Toggle.
+Running Set-Default will set windows 10 to the default DNS settings.
 
 
 
